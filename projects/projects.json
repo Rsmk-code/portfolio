@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Byte and Bite B&B Backend Project",
+    "desc": "B&B! This project aims to connect customers with local cooks who offer delicious homemade food, providing a convenient and diverse culinary experience.",
+    "image": "tsfbank",
+    "category": "API-Backend",
+    "links": {
+      "view": "https://byteandbite.onrender.com/",
+      "code": "https://github.com/Rsmk-code/byte-and-bite"
+    }
+  }
+]
