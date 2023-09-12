@@ -605,6 +605,22 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   flex: 1 1 70rem;
 }
+.education .box-container .box .content .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.education .box-container .box .content .header img{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.education .box-container .box .content .header img:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
   color: #012970;
@@ -651,6 +667,17 @@ header .navbar ul li a:hover {
     flex-wrap: wrap;
     flex: 0;
   }
+  .education .box-container .box .content .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .education .box-container .box .content .header img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+  }
+
   .education .box-container .box .content p {
     font-size: 2.0rem;
   }
