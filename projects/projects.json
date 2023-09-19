@@ -8,5 +8,15 @@
       "view": "https://byteandbite.onrender.com/",
       "code": "https://github.com/Rsmk-code/byte-and-bite"
     }
+  },
+  {
+    "name": "Quiz App Project",
+    "desc": "The aim of the quiz app is to entertain and educate users by offering engaging quizzes on various topics, promoting both fun and learning.",
+    "image": "quiz-app",
+    "category": "full-stack",
+    "links": {
+      "view": "https://quiz-app-react.onrender.com/",
+      "code": "https://github.com/Rsmk-code/Quiz-App"
+    }
   }
 ]
