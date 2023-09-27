@@ -18,5 +18,15 @@
       "view": "https://quiz-app-react.onrender.com/",
       "code": "https://github.com/Rsmk-code/Quiz-App"
     }
+  },
+  {
+    "name": "Store Locator Project",
+    "desc": "The aim of this store locator project is to help users find nearby stores and access information about them, facilitating convenient shopping and navigation..",
+    "image": "store-app",
+    "category": "full-stack",
+    "links": {
+      "view": "https://storelocator-saww.onrender.com/index.html#",
+      "code": "https://github.com/Rsmk-code/storeLocator"
+    }
   }
 ]
