@@ -170,7 +170,7 @@ function fadeOut() {
     setTimeout(loader, 500); 
 }
 window.onload = fadeOut;
-// pre loader end
+// pre loader end.
 
 
 // disable developer mode
