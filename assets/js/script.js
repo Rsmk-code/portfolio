@@ -169,7 +169,7 @@ function fadeOut() {
     setInterval(loader, 500);
 }
 window.onload = fadeOut;
-//pre loader end
+// pre loader end
 
 // disable developer mode
 document.onkeydown = function (e) {
