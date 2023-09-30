@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import "compass/css3";
 
 * {
   margin: 0;
@@ -371,7 +373,7 @@ header .navbar ul li a:hover {
 }
 .about .row .image img {
   margin: 4rem;
-  width: 30rem;
+  width: 25rem;
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -981,6 +983,167 @@ header .navbar ul li a:hover {
 }
 /* experience media queries ends */
 /* experience section ends */
+
+/* blog section starts */
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to bottom, #000031, #00002c);
+  padding: 4rem;
+}
+.blog .heading {
+  color: #fff;
+}
+
+.blog .blog_a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 90vw;
+  overflow-x: hidden;
+}
+.blog .blog_a .blog_m {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: hidden;
+  box-shadow: -10px 0 10px -10px rgba(255, 255, 255, 0.5), 10px 0 10px -10px rgba(255, 255, 255, 0.5), 0 -10px 10px -10px rgba(255, 255, 255, 0.5), 0 10px 10px -10px rgba(255, 255, 255, 0.5);
+}
+.blog  .paginate {
+  background-color: transparent;
+  color: #fff;
+  font-size: 5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: all .1s ease-in-out;
+}
+.blog  .paginate:hover {
+  color: #D1913C;
+}
+.blog_s {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block: 4rem;
+  gap: 4rem;
+  transition: transform 0.5s ease;
+} 
+.blog img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(30rem, calc(30rem + 3vw), 33rem); 
+  overflow: hidden; 
+  border-radius: 1rem;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  box-shadow: 0px 5px 15px rgba(81, 99, 255, 0.6);
+  transition: all .2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+
+.blog .blog_s .card .card__body {
+  padding: 1.50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog .blog_s .card .card__body p{
+  font-size: 1.5rem;
+}
+
+.blog .blog_s .card .card__body h4 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+
+.blog .blog_s .card .card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .60rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+  font-size: 1.4rem;
+}
+.user__info > h5 {
+  font-size: 1.7rem;
+}
+.blog .viewall {
+  display: flex;
+  justify-content: center;
+}
+.blog .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.blog .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.blog .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.blog .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.blog .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+@media (max-width: 900px) {
+  .card {
+    width: clamp(25rem, calc(20rem + 3vw), 23rem); 
+  }
+  .blog .blog_a {
+  gap: 1rem;
+}
+.blog .blog_a .blog_m {
+  gap: 1rem;
+  box-shadow: none;
+}
+.blog_s {
+  position: relative;
+  left: 15rem;
+} 
+}
+/* blog section ends */
 
 /* contact section starts */
 .contact {

@@ -1,0 +1,174 @@
+{
+  "posts": [
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?nodejs",
+      "title": "Mastering Node.js: A Comprehensive Guide",
+      "content": "Learn the ins and outs of Node.js, from asynchronous programming to building scalable server-side applications. This comprehensive guide covers advanced topics like event-driven architecture, package management with npm, and deploying Node.js apps in production environments. Whether you're a seasoned developer or just starting with Node.js, this guide will take your skills to the next level.",
+      "author": {
+        "name": "WebDev Guru",
+        "timestamp": "3h ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=4"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?javascript",
+      "title": "Exploring Modern JavaScript Features",
+      "content": "Discover the latest features and best practices in JavaScript development to enhance your web projects. In this in-depth exploration, we delve into ES6 and beyond, covering topics like arrow functions, async/await, and modules. Stay ahead of the curve and leverage the power of modern JavaScript to write cleaner, more efficient code.",
+      "author": {
+        "name": "JS Enthusiast",
+        "timestamp": "Yesterday",
+        "avatarSrc": "https://i.pravatar.cc/40?img=5"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?backend",
+      "title": "Demystifying Web Development Backend",
+      "content": "Dive into the world of web development backend technologies, including databases, APIs, and server management. This comprehensive guide will help you understand the core components of backend development and provide practical tips for building robust, secure, and scalable web applications. Whether you're a backend novice or expert, there's something here for everyone.",
+      "author": {
+        "name": "Backend Ninja",
+        "timestamp": "2d ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=6"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?webdev",
+      "title": "Web Development Fundamentals for Beginners",
+      "content": "Get started with web development basics, including HTML, CSS, and creating your first website. This beginner-friendly guide covers the essential building blocks of web development, making it perfect for those taking their first steps in the field. Learn the foundations and kickstart your journey to becoming a proficient web developer.",
+      "author": {
+        "name": "WebDev Rookie",
+        "timestamp": "1 week ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=7"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?frontend",
+      "title": "Frontend Development: Building User-Friendly Interfaces",
+      "content": "Learn the art of frontend development, including responsive design and interactive web interfaces. This hands-on guide explores frontend frameworks, CSS preprocessors, and best practices for creating user-friendly websites and applications. Whether you're a seasoned frontend developer or aspiring to be one, this guide will help you craft stunning and intuitive user interfaces.",
+      "author": {
+        "name": "Frontend Pro",
+        "timestamp": "4 days ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=8"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?webdesign",
+      "title": "Web Design Trends for 2023",
+      "content": "Stay up-to-date with the latest web design trends, including color schemes, typography, and layouts. In this comprehensive overview, we analyze the design landscape for 2023, highlighting emerging trends and providing inspiration for designers and developers alike. Elevate your web design game and create visually stunning websites that captivate your audience.",
+      "author": {
+        "name": "Design Enthusiast",
+        "timestamp": "1 month ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=9"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?nodejs",
+      "title": "Mastering Node.js: A Comprehensive Guide",
+      "content": "Learn the ins and outs of Node.js, from asynchronous programming to building scalable server-side applications. This comprehensive guide covers advanced topics like event-driven architecture, package management with npm, and deploying Node.js apps in production environments. Whether you're a seasoned developer or just starting with Node.js, this guide will take your skills to the next level.",
+      "author": {
+        "name": "WebDev Guru",
+        "timestamp": "3h ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=4"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?javascript",
+      "title": "Exploring Modern JavaScript Features",
+      "content": "Discover the latest features and best practices in JavaScript development to enhance your web projects. In this in-depth exploration, we delve into ES6 and beyond, covering topics like arrow functions, async/await, and modules. Stay ahead of the curve and leverage the power of modern JavaScript to write cleaner, more efficient code.",
+      "author": {
+        "name": "JS Enthusiast",
+        "timestamp": "Yesterday",
+        "avatarSrc": "https://i.pravatar.cc/40?img=5"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?backend",
+      "title": "Demystifying Web Development Backend",
+      "content": "Dive into the world of web development backend technologies, including databases, APIs, and server management. This comprehensive guide will help you understand the core components of backend development and provide practical tips for building robust, secure, and scalable web applications. Whether you're a backend novice or expert, there's something here for everyone.",
+      "author": {
+        "name": "Backend Ninja",
+        "timestamp": "2d ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=6"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?webdev",
+      "title": "Web Development Fundamentals for Beginners",
+      "content": "Get started with web development basics, including HTML, CSS, and creating your first website. This beginner-friendly guide covers the essential building blocks of web development, making it perfect for those taking their first steps in the field. Learn the foundations and kickstart your journey to becoming a proficient web developer.",
+      "author": {
+        "name": "WebDev Rookie",
+        "timestamp": "1 week ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=7"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?frontend",
+      "title": "Frontend Development: Building User-Friendly Interfaces",
+      "content": "Learn the art of frontend development, including responsive design and interactive web interfaces. This hands-on guide explores frontend frameworks, CSS preprocessors, and best practices for creating user-friendly websites and applications. Whether you're a seasoned frontend developer or aspiring to be one, this guide will help you craft stunning and intuitive user interfaces.",
+      "author": {
+        "name": "Frontend Pro",
+        "timestamp": "4 days ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=8"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?webdesign",
+      "title": "Web Design Trends for 2023",
+      "content": "Stay up-to-date with the latest web design trends, including color schemes, typography, and layouts. In this comprehensive overview, we analyze the design landscape for 2023, highlighting emerging trends and providing inspiration for designers and developers alike. Elevate your web design game and create visually stunning websites that captivate your audience.",
+      "author": {
+        "name": "Design Enthusiast",
+        "timestamp": "1 month ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=9"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?python",
+      "title": "Python: A Versatile Language for All",
+      "content": "Discover the versatility of Python, from web development to data science and automation. This guide explores Python's wide range of applications and provides insights into how to leverage its power for various projects. Whether you're a beginner or an experienced developer, Python has something to offer for everyone.",
+      "author": {
+        "name": "Pythonista",
+        "timestamp": "5 days ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=10"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?react",
+      "title": "React.js: Building Interactive User Interfaces",
+      "content": "Learn how to build interactive and dynamic user interfaces using React.js. This guide covers the fundamentals of React, including components, state management, and routing. Whether you're new to React or looking to enhance your skills, this resource will help you create engaging web applications.",
+      "author": {
+        "name": "React Dev",
+        "timestamp": "6 days ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=11"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?vuejs",
+      "title": "Vue.js: The Progressive JavaScript Framework",
+      "content": "Explore Vue.js, the progressive JavaScript framework that makes building web applications a breeze. This comprehensive guide covers Vue.js fundamentals, including components, directives, and state management. Whether you're a novice or an experienced developer, Vue.js offers a refreshing approach to frontend development.",
+      "author": {
+        "name": "Vue Enthusiast",
+        "timestamp": "1 week ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=12"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?docker",
+      "title": "Docker: Containerization Made Easy",
+      "content": "Learn how to containerize your applications with Docker and streamline the deployment process. This guide covers Docker basics, container orchestration, and best practices for managing containers in production. Whether you're a developer or an operations professional, Docker can simplify your workflow and enhance application scalability.",
+      "author": {
+        "name": "Docker Dev",
+        "timestamp": "2 weeks ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=13"
+      }
+    },
+    {
+      "imageSrc": "https://source.unsplash.com/600x400/?cloudcomputing",
+      "title": "Demystifying Cloud Computing",
+      "content": "Explore the world of cloud computing, from infrastructure as a service (IaaS) to serverless architectures. This comprehensive guide provides insights into major cloud providers, cloud security, and best practices for designing scalable and resilient cloud-based applications. Whether you're new to the cloud or a cloud expert, this resource will help you harness the power of cloud computing.",
+      "author": {
+        "name": "Cloud Geek",
+        "timestamp": "3 weeks ago",
+        "avatarSrc": "https://i.pravatar.cc/40?img=14"
+      }
+    }
+  ]
+}
