@@ -1153,11 +1153,12 @@ header .navbar ul li a:hover {
   }
   .blog_s {
     position: relative;
-    left: 20rem;    
+    left: 22.5rem;    
   } 
   
   .card {
-    width: clamp(5rem, calc(35rem + 3vw),50rem); 
+    width: 41rem;
+    height: 58rem;
   }
 }
 /* blog section ends */
