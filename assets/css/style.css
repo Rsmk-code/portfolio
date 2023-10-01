@@ -1128,20 +1128,37 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 @media (max-width: 900px) {
-  .card {
-    width: clamp(25rem, calc(20rem + 3vw), 23rem); 
-  }
   .blog .blog_a {
-  gap: 1rem;
-}
-.blog .blog_a .blog_m {
-  gap: 1rem;
-  box-shadow: none;
-}
-.blog_s {
-  position: relative;
-  left: 14.5rem;
-} 
+    gap: 0px;
+  }
+  .blog .blog_a .blog_m {
+    gap: 0rem;
+    box-shadow: none;
+  }
+  .blog  .paginate {
+    color: #D1913C;
+    z-index: 100;
+  }
+  .blog  .paginate:hover {
+    color: #D1913C;
+  }
+  #rightButton{
+    position: absolute;
+    right: 1.2rem;
+  }
+  
+  #leftButton{
+    position: absolute;
+    left: 1.2rem;
+  }
+  .blog_s {
+    position: relative;
+    left: 20rem;    
+  } 
+  
+  .card {
+    width: clamp(5rem, calc(35rem + 3vw),50rem); 
+  }
 }
 /* blog section ends */
 
