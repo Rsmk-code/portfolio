@@ -3,10 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import "compass/css3";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
   outline: none;
   border: none;
@@ -28,10 +32,6 @@ body {
   color: #fff;
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -992,31 +992,20 @@ header .navbar ul li a:hover {
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   background: linear-gradient(to bottom, #000031, #00002c);
-  padding: 4rem;
+  padding: 2rem;
+}
+.blog .blogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  overflow-x: hidden;
 }
 .blog .heading {
   color: #fff;
 }
-
-.blog .blog_a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 90vw;
-  overflow-x: hidden;
-}
-.blog .blog_a .blog_m {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  overflow-x: hidden;
-  box-shadow: -10px 0 10px -10px rgba(255, 255, 255, 0.5), 10px 0 10px -10px rgba(255, 255, 255, 0.5), 0 -10px 10px -10px rgba(255, 255, 255, 0.5), 0 10px 10px -10px rgba(255, 255, 255, 0.5);
-}
-.blog  .paginate {
+.blog .blogs .paginate {
   background-color: transparent;
   color: #fff;
   font-size: 5rem;
@@ -1024,24 +1013,40 @@ header .navbar ul li a:hover {
   border-radius: 50%;
   transform: all .1s ease-in-out;
 }
-.blog  .paginate:hover {
+.blog .blogs .paginate:hover {
   color: #D1913C;
 }
-.blog_s {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-block: 4rem;
-  gap: 4rem;
-  transition: transform 0.5s ease;
-} 
-.blog img {
+
+/* CardContainer and cards */
+.blog .blogs .CardContainer {
+position: relative;
+width: 100vw;
+height: 50rem;
+overflow: hidden; 
+cursor: grab;
+margin: 3rem 2rem 0 2rem;
+}
+
+.blog .blogs .CardContainer .cards .card .card__header img {
   max-width: 100%;
   display: block;
   object-fit: cover;
 }
+.blog .blogs .CardContainer .cards {
+position: absolute;
+top: 0;
+left: 0;
+display: grid;
+grid-template-columns: repeat(16, auto);
+grid-gap: 3rem;
+pointer-events: none;
+transition: left 0.3s ease; 
+}
+/* .blog .blog_m .blog_s .card:hover {
+  transform: scale(1.04);
+} */
 
-.card {
+.blog .blogs .CardContainer .cards .card {
   display: flex;
   flex-direction: column;
   width: clamp(30rem, calc(30rem + 3vw), 33rem); 
@@ -1050,48 +1055,38 @@ header .navbar ul li a:hover {
   background: #ECE9E6;
   background: linear-gradient(to right, #FFFFFF, #ECE9E6);
   box-shadow: 0px 5px 15px rgba(81, 99, 255, 0.6);
-  transition: all .2s ease-in-out;
-}
-.card:hover {
-  transform: scale(1.04);
 }
 
-.blog .blog_s .card .card__body {
+.blog .blogs .CardContainer .cards .card .card__body {
   padding: 1.50rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
-.blog .blog_s .card .card__body p{
+.blog .blogs .CardContainer .cards .card .card__body p{
   font-size: 1.5rem;
 }
-
-.blog .blog_s .card .card__body h4 {
+.blog .blogs .CardContainer .cards .card .card__body h4 {
   font-size: 2.2rem;
   text-transform: capitalize;
 }
-
-.blog .blog_s .card .card__footer {
+.blog .blogs .CardContainer .cards .card .card__footer {
   display: flex;
   padding: 1rem;
   margin-top: auto;
 }
-
-.user {
+.blog .blogs .CardContainer .cards .card .card__footer .user {
   display: flex;
   gap: .60rem;
 }
-
-.user__image {
+.blog .blogs .CardContainer .cards .card .card__footer .user .user__image {
   border-radius: 50%;
 }
-
-.user__info > small {
+.blog .blogs .CardContainer .cards .card .card__footer .user .user__info > small {
   color: #666;
   font-size: 1.4rem;
 }
-.user__info > h5 {
+.blog .blogs .CardContainer .cards .card .card__footer .user .user__info > h5 {
   font-size: 1.7rem;
 }
 .blog .viewall {
@@ -1127,40 +1122,15 @@ header .navbar ul li a:hover {
 .blog .viewall .btn:hover i {
   transform: translateX(5px);
 }
-@media (max-width: 900px) {
-  .blog .blog_a {
-    gap: 0px;
+@media (max-width: 600px) {
+  .blog .blogs .CardContainer {
+    overflow: visible;
   }
-  .blog .blog_a .blog_m {
-    gap: 0rem;
-    box-shadow: none;
+  .paginate {
+    display: none;
   }
-  .blog  .paginate {
-    color: #D1913C;
-    z-index: 100;
-  }
-  .blog  .paginate:hover {
-    color: #D1913C;
-  }
-  #rightButton{
-    position: absolute;
-    right: 1.2rem;
-  }
-  
-  #leftButton{
-    position: absolute;
-    left: 1.2rem;
-  }
-  .blog_s {
-    position: relative;
-    left: 22.5rem;    
-  } 
-  
-  .card {
-    width: 41rem;
-    height: 58rem;
-  }
-}
+} 
+
 /* blog section ends */
 
 /* contact section starts */

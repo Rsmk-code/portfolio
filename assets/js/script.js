@@ -161,107 +161,138 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // <!-- tilt js effect ends -->
 
 // blog section starts
-// Function to fetch data from the JSON file and limit the number of posts
-function fetchLimitedBlogData(limit) {
-    return fetch("../blog/blogData.json")
-      .then(response => response.json())
-      .then(data => {
-        return data.posts.slice(0, limit); // Limit the number of posts
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
+
+document.addEventListener("DOMContentLoaded", () => {
+  function fetchLimitedBlogData(limit) {
+    return fetch("./blog/blogData.json")
+      .then((response) => response.json())
+      .then((data) => data.posts.slice(0, limit))
+      .catch((error) => {
+        console.error("Error fetching data:", error);
       });
   }
-  
-  // Function to display limited blog posts in the HTML
-  function displayLimitedBlogPosts(posts) {
-    const blogContainer = document.querySelector(".blog_s");
-  
-    posts.forEach(post => {
-      // Extract the first 120 characters of the content
-    const first120Chars = post.content.substring(0, 120);
 
-      const postHTML = `
-      <div class="card">
-      <div class="card__header">
-        <img src="${post.imageSrc}" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <h4>${post.title}</h4>
-        <p>${first120Chars}...</p>
-      </div>
-      <div class="card__footer">
-        <div class="user">
-          <img src="${post.author.avatarSrc}" alt="user__image" class="user__image">
-          <div class="user__info">
-            <h5>${post.author.name}</h5>
-            <small>${post.author.timestamp}</small>
-          </div>
-        </div>
-      </div>
-    </div>
-      `;
-  
-      blogContainer.innerHTML += postHTML;
-    });
-  }
+  const CardContainer = document.querySelector(".CardContainer");
+  const cards = document.querySelector(".cards");
+
+  let isPressedDown = false;
+  let cursorXSpace;
+  let touchStartX;
   let currentIndex = 0;
-  // Function to slide cards to the left
-  function slideLeft() {
-    const blogContainer = document.querySelector(".blog_s");
-    const cards = blogContainer.querySelectorAll(".card");
-  
-    const lastCard = cards[cards.length - 1].cloneNode(true);
-    blogContainer.insertBefore(lastCard, cards[0]);
-  
-    blogContainer.removeChild(cards[cards.length - 1]);
-  
-    currentIndex = (currentIndex + 1) % cards.length;
-  
-    cards.forEach((card, index) => {
-      setTimeout(() => {
-        card.classList.add("slide-left");
-      }, index * 100);
-    });
-  }
-  
-  // Function to slide cards to the right
-  function slideRight() {
-    const blogContainer = document.querySelector(".blog_s");
-    const cards = blogContainer.querySelectorAll(".card");
-  
-    const firstCard = cards[0].cloneNode(true);
-    blogContainer.appendChild(firstCard);
-  
-    blogContainer.removeChild(cards[0]);
-  
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-  
-    cards.forEach((card, index) => {
-      setTimeout(() => {
-        card.classList.add("slide-right");
-      }, index * 100);
-    });
-  }
-  // Add event listeners to left and right buttons
-  const leftButton = document.getElementById("leftButton");
-  const rightButton = document.getElementById("rightButton");
-  
-  leftButton.addEventListener("click", () => {
-    slideLeft();
-  });
-  
-  rightButton.addEventListener("click", () => {
-    slideRight();
-  });
-  
-// Fetch and display limited blog posts
-const limit = 16; // Declare 'limit' only once
-fetchLimitedBlogData(limit)
-  .then(posts => {
-    displayLimitedBlogPosts(posts);
-  });
+  const limit = 16;
 
+  function displayLimitedBlogPosts(posts) {
+    const blogContainer = document.querySelector(".cards");
+    blogContainer.innerHTML = ''; // Clear existing posts
+
+    posts.forEach((post) => {
+      const first120Chars = post.content.substring(0, 120);
+
+    const postHTML = `
+        <div class="card">
+            <div class="card__header">
+                <img src="${post.imageSrc}" alt="card__image" class="card__image" width="600">
+            </div>
+            <div class="card__body">
+                <h4>${post.title}</h4>
+                <p>${first120Chars}...</p>
+            </div>
+            <div class="card__footer">
+                <div class="user">
+                    <img src="${post.author.avatarSrc}" alt="user__image" class="user__image">
+                    <div class="user__info">
+                        <h5>${post.author.name}</h5>
+                        <small>${post.author.timestamp}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    blogContainer.innerHTML += postHTML;
+});
+}
+
+CardContainer.addEventListener("mousedown", (e) => {
+  isPressedDown = true;
+  cursorXSpace = e.clientX - cards.getBoundingClientRect().left;
+  CardContainer.style.cursor = "grabbing";
+});
+
+CardContainer.addEventListener("mouseup", () => {
+  isPressedDown = false;
+  CardContainer.style.cursor = "grab";
+});
+
+window.addEventListener("mouseup", () => {
+  isPressedDown = false;
+  CardContainer.style.cursor = "grab";
+});
+
+CardContainer.addEventListener("mousemove", (e) => {
+  if (!isPressedDown) return;
+  e.preventDefault();
+  cards.style.left = `${e.clientX - cursorXSpace}px`;
+  boundCards();
+});
+
+CardContainer.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+  CardContainer.style.cursor = "grabbing";
+}, { passive: true });
+
+let touchEndX;
+
+CardContainer.addEventListener("touchmove", (e) => {
+  e.preventDefault();
+  touchEndX = e.touches[0].clientX;
+  const offsetX = touchEndX - touchStartX;
+  cards.style.left = `${parseInt(cards.style.left) + offsetX}px`;
+  touchStartX = touchEndX;
+  boundCards();
+}, { passive: false });
+
+CardContainer.addEventListener("touchend", () => {
+  CardContainer.style.cursor = "grab";
+});
+
+function slideCards(direction) {
+  const cardWidth = cards.querySelector(".card").offsetWidth;
+  const offset = direction === "left" ? cardWidth : -cardWidth;
+
+  cards.style.left = `${parseInt(cards.style.left) + offset}px`;
+
+  currentIndex = direction === "left" ? (currentIndex + 1) % limit : (currentIndex - 1 + limit) % limit;
+
+  boundCards();
+}
+
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
+
+leftButton.addEventListener("click", () => {
+  slideCards("left");
+});
+
+rightButton.addEventListener("click", () => {
+  slideCards("right");
+});
+
+function boundCards() {
+  const containerRect = CardContainer.getBoundingClientRect();
+  const cardsRect = cards.getBoundingClientRect();
+
+  if (cardsRect.left > containerRect.left) {
+    cards.style.left = 0;
+  } else if (cardsRect.right < containerRect.right) {
+    cards.style.left = `${containerRect.right - cardsRect.width}px`;
+  }
+}
+
+fetchLimitedBlogData(limit).then((posts) => {
+  displayLimitedBlogPosts(posts);
+});
+});
  // blog section ends 
 
 // pre loader start
