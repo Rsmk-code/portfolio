@@ -1040,12 +1040,7 @@ display: grid;
 grid-template-columns: repeat(16, auto);
 grid-gap: 3rem;
 pointer-events: none;
-transition: left 0.3s ease; 
 }
-/* .blog .blog_m .blog_s .card:hover {
-  transform: scale(1.04);
-} */
-
 .blog .blogs .CardContainer .cards .card {
   display: flex;
   flex-direction: column;

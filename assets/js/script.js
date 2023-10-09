@@ -239,9 +239,8 @@ CardContainer.addEventListener("mousemove", (e) => {
 CardContainer.addEventListener("touchstart", (e) => {
   touchStartX = e.touches[0].clientX;
   CardContainer.style.cursor = "grabbing";
+  console.log("Touch Start X: " + touchStartX);
 }, { passive: true });
-
-let touchEndX;
 
 CardContainer.addEventListener("touchmove", (e) => {
   e.preventDefault();
@@ -250,12 +249,13 @@ CardContainer.addEventListener("touchmove", (e) => {
   cards.style.left = `${parseInt(cards.style.left) + offsetX}px`;
   touchStartX = touchEndX;
   boundCards();
+  console.log("Touch Move X: " + touchEndX);
 }, { passive: false });
 
 CardContainer.addEventListener("touchend", () => {
   CardContainer.style.cursor = "grab";
+  console.log("Touch End");
 });
-
 function slideCards(direction) {
   const cardWidth = cards.querySelector(".card").offsetWidth;
   const offset = direction === "left" ? cardWidth : -cardWidth;
