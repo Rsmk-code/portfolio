@@ -161,7 +161,6 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // <!-- tilt js effect ends -->
 
 // blog section starts
-
 document.addEventListener("DOMContentLoaded", () => {
   function fetchLimitedBlogData(limit) {
     return fetch("./blog/blogData.json")
@@ -171,25 +170,16 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error fetching data:", error);
       });
   }
-
-  const CardContainer = document.querySelector(".CardContainer");
-  const cards = document.querySelector(".cards");
-
-  let isPressedDown = false;
-  let cursorXSpace;
-  let touchStartX;
-  let currentIndex = 0;
   const limit = 16;
-
   function displayLimitedBlogPosts(posts) {
-    const blogContainer = document.querySelector(".cards");
+    const blogContainer = document.querySelector(".card-wrapper");
     blogContainer.innerHTML = ''; // Clear existing posts
 
     posts.forEach((post) => {
-      const first120Chars = post.content.substring(0, 120);
+      const first120Chars = post.content.substring(0, 100);
 
     const postHTML = `
-        <div class="card">
+        <div class="card swiper-slide">
             <div class="card__header">
                 <img src="${post.imageSrc}" alt="card__image" class="card__image" width="600">
             </div>
@@ -212,87 +202,45 @@ document.addEventListener("DOMContentLoaded", () => {
     blogContainer.innerHTML += postHTML;
 });
 }
-
-CardContainer.addEventListener("mousedown", (e) => {
-  isPressedDown = true;
-  cursorXSpace = e.clientX - cards.getBoundingClientRect().left;
-  CardContainer.style.cursor = "grabbing";
-});
-
-CardContainer.addEventListener("mouseup", () => {
-  isPressedDown = false;
-  CardContainer.style.cursor = "grab";
-});
-
-window.addEventListener("mouseup", () => {
-  isPressedDown = false;
-  CardContainer.style.cursor = "grab";
-});
-
-CardContainer.addEventListener("mousemove", (e) => {
-  if (!isPressedDown) return;
-  e.preventDefault();
-  cards.style.left = `${e.clientX - cursorXSpace}px`;
-  boundCards();
-});
-
-CardContainer.addEventListener("touchstart", (e) => {
-  touchStartX = e.touches[0].clientX;
-  CardContainer.style.cursor = "grabbing";
-  console.log("Touch Start X: " + touchStartX);
-}, { passive: true });
-
-CardContainer.addEventListener("touchmove", (e) => {
-  e.preventDefault();
-  touchEndX = e.touches[0].clientX;
-  const offsetX = touchEndX - touchStartX;
-  cards.style.left = `${parseInt(cards.style.left) + offsetX}px`;
-  touchStartX = touchEndX;
-  boundCards();
-  console.log("Touch Move X: " + touchEndX);
-}, { passive: false });
-
-CardContainer.addEventListener("touchend", () => {
-  CardContainer.style.cursor = "grab";
-  console.log("Touch End");
-});
-function slideCards(direction) {
-  const cardWidth = cards.querySelector(".card").offsetWidth;
-  const offset = direction === "left" ? cardWidth : -cardWidth;
-
-  cards.style.left = `${parseInt(cards.style.left) + offset}px`;
-
-  currentIndex = direction === "left" ? (currentIndex + 1) % limit : (currentIndex - 1 + limit) % limit;
-
-  boundCards();
-}
-
-const leftButton = document.getElementById("leftButton");
-const rightButton = document.getElementById("rightButton");
-
-leftButton.addEventListener("click", () => {
-  slideCards("left");
-});
-
-rightButton.addEventListener("click", () => {
-  slideCards("right");
-});
-
-function boundCards() {
-  const containerRect = CardContainer.getBoundingClientRect();
-  const cardsRect = cards.getBoundingClientRect();
-
-  if (cardsRect.left > containerRect.left) {
-    cards.style.left = 0;
-  } else if (cardsRect.right < containerRect.right) {
-    cards.style.left = `${containerRect.right - cardsRect.width}px`;
-  }
-}
-
 fetchLimitedBlogData(limit).then((posts) => {
   displayLimitedBlogPosts(posts);
 });
 });
+// swipper blog 
+var swiper = new Swiper(".slide-container", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  sliderPerGroup: 4,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+});
+
  // blog section ends 
 
 // pre loader start

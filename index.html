@@ -19,6 +19,8 @@
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-MGR35FH"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
@@ -287,19 +289,22 @@
 <section class="blog" id="blog">
   <h2 class="heading"><i class="fas fa-blog"></i> Blog </h2>
   <div class="blogs">
-      <button class="paginate left" id="leftButton"><i class="fas fa-arrow-circle-left"></i></button>
-      <div class="CardContainer">
-          <div class="cards">
-              <!-- cards -->
-          </div>
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- card -->
+        </div>
       </div>
-      <button class="paginate right" id="rightButton"><i class="fas fa-arrow-circle-right"></i></button>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+    <div class="swiper-pagination"></div>
   </div>
   <div class="viewall">
-      <a href="/blog" class="btn"><span>View All</span>
-          <i class="fas fa-arrow-right"></i>
-      </a>
-  </div>
+    <a href="/blog" class="btn"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
 </section>
 <!-- blog section ends-->
 
@@ -412,7 +417,7 @@
     ></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
+<script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
