@@ -963,7 +963,7 @@ header .navbar ul li a:hover {
     font-size: 2.2rem;
   }
   .experience .container::before {
-    left: 72px;
+    left: 62px;
     border: medium solid #f68c09;
     border-width: 10px 10px 10px 0;
     border-color: transparent #f68c09 transparent transparent;
