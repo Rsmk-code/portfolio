@@ -253,6 +253,9 @@ header .navbar ul li a:hover{
   .blog_s {
     flex-direction: column;
   }
+  .card {
+    width: clamp(30rem, calc(36rem + 3vw), 38rem); 
+  }
 }
 /* blog section ends */
 
