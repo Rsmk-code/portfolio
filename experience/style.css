@@ -233,7 +233,7 @@ header .navbar ul li a:hover{
   top: 22px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: 31px;
   border: medium solid #f68c09;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #f68c09;
@@ -246,7 +246,7 @@ header .navbar ul li a:hover{
   top: 22px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 31px;
   border: medium solid #f68c09;
   border-width: 10px 10px 10px 0;
   border-color: transparent #f68c09 transparent transparent;
@@ -320,7 +320,7 @@ header .navbar ul li a:hover{
   padding-right: 25px;
   }
   .experience .container::before {
-  left: 60px;
+  left: 62px;
   border: medium solid #f68c09;
   border-width: 10px 10px 10px 0;
   border-color: transparent #f68c09 transparent transparent;
