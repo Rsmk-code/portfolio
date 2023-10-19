@@ -64,6 +64,10 @@
         "icon": "https://img.icons8.com/color/48/000000/figma.png"
     },
     {
+        "name": "Swagger",
+        "icon": "https://img.icons8.com/color/48/000000/cloud-function.png"
+    },
+    {
         "name": "Linux",
         "icon": "https://img.icons8.com/color/48/000000/linux.png"
     },
