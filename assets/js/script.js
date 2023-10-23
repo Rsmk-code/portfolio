@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="${post.imageSrc}" alt="card__image" class="card__image" width="600">
             </div>
             <div class="card__body">
-                <h4>${post.title}</h4>
+                <a href="${post.link}"><h4>${post.title}</h4></a>
                 <p>${first120Chars}...</p>
             </div>
             <div class="card__footer">
@@ -198,7 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     `;
-
     blogContainer.innerHTML += postHTML;
 });
 }

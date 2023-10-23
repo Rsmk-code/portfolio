@@ -1045,6 +1045,15 @@ header .navbar ul li a:hover {
 .blog .card .card__body p{
   font-size: 1.5rem;
 }
+.blog .card .card__body a {
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.blog .card .card__body a:hover {
+  color:#1a047e;
+}
 .blog .card .card__body h4 {
   font-size: 2.2rem;
   text-transform: capitalize;

@@ -1,6 +1,7 @@
 {
   "posts": [
     {
+      "link":"https://blog.ramin.website/",
       "imageSrc": "https://source.unsplash.com/600x400/?nodejs",
       "title": "Mastering Node.js: A Comprehensive Guide",
       "content": "Learn the ins and outs of Node.js, from asynchronous programming to building scalable server-side applications. This comprehensive guide covers advanced topics like event-driven architecture, package management with npm, and deploying Node.js apps in production environments. Whether you're a seasoned developer or just starting with Node.js, this guide will take your skills to the next level.",
@@ -11,6 +12,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?javascript",
       "title": "Exploring Modern JavaScript Features",
       "content": "Discover the latest features and best practices in JavaScript development to enhance your web projects. In this in-depth exploration, we delve into ES6 and beyond, covering topics like arrow functions, async/await, and modules. Stay ahead of the curve and leverage the power of modern JavaScript to write cleaner, more efficient code.",
@@ -21,6 +23,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?backend",
       "title": "Demystifying Web Development Backend",
       "content": "Dive into the world of web development backend technologies, including databases, APIs, and server management. This comprehensive guide will help you understand the core components of backend development and provide practical tips for building robust, secure, and scalable web applications. Whether you're a backend novice or expert, there's something here for everyone.",
@@ -31,9 +34,10 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?webdev",
       "title": "Web Development Fundamentals for Beginners",
-      "content": "Get started with web development basics, including HTML, CSS, and creating your first website. This beginner-friendly guide covers the essential building blocks of web development, making it perfect for those taking their first steps in the field. Learn the foundations and kickstart your journey to becoming a proficient web developer.",
+      "content": "Web development is an exciting and constantly evolving field that empowers you to create and shape the digital world.",
       "author": {
         "name": "WebDev Rookie",
         "timestamp": "1 week ago",
@@ -41,6 +45,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?frontend",
       "title": "Frontend Development: Building User-Friendly Interfaces",
       "content": "Learn the art of frontend development, including responsive design and interactive web interfaces. This hands-on guide explores frontend frameworks, CSS preprocessors, and best practices for creating user-friendly websites and applications. Whether you're a seasoned frontend developer or aspiring to be one, this guide will help you craft stunning and intuitive user interfaces.",
@@ -51,6 +56,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?webdesign",
       "title": "Web Design Trends for 2023",
       "content": "Stay up-to-date with the latest web design trends, including color schemes, typography, and layouts. In this comprehensive overview, we analyze the design landscape for 2023, highlighting emerging trends and providing inspiration for designers and developers alike. Elevate your web design game and create visually stunning websites that captivate your audience.",
@@ -61,6 +67,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?nodejs",
       "title": "Mastering Node.js: A Comprehensive Guide",
       "content": "Learn the ins and outs of Node.js, from asynchronous programming to building scalable server-side applications. This comprehensive guide covers advanced topics like event-driven architecture, package management with npm, and deploying Node.js apps in production environments. Whether you're a seasoned developer or just starting with Node.js, this guide will take your skills to the next level.",
@@ -71,6 +78,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?javascript",
       "title": "Exploring Modern JavaScript Features",
       "content": "Discover the latest features and best practices in JavaScript development to enhance your web projects. In this in-depth exploration, we delve into ES6 and beyond, covering topics like arrow functions, async/await, and modules. Stay ahead of the curve and leverage the power of modern JavaScript to write cleaner, more efficient code.",
@@ -81,6 +89,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?backend",
       "title": "Demystifying Web Development Backend",
       "content": "Dive into the world of web development backend technologies, including databases, APIs, and server management. This comprehensive guide will help you understand the core components of backend development and provide practical tips for building robust, secure, and scalable web applications. Whether you're a backend novice or expert, there's something here for everyone.",
@@ -91,6 +100,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?webdev",
       "title": "Web Development Fundamentals for Beginners",
       "content": "Get started with web development basics, including HTML, CSS, and creating your first website. This beginner-friendly guide covers the essential building blocks of web development, making it perfect for those taking their first steps in the field. Learn the foundations and kickstart your journey to becoming a proficient web developer.",
@@ -101,6 +111,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?frontend",
       "title": "Frontend Development: Building User-Friendly Interfaces",
       "content": "Learn the art of frontend development, including responsive design and interactive web interfaces. This hands-on guide explores frontend frameworks, CSS preprocessors, and best practices for creating user-friendly websites and applications. Whether you're a seasoned frontend developer or aspiring to be one, this guide will help you craft stunning and intuitive user interfaces.",
@@ -111,6 +122,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?webdesign",
       "title": "Web Design Trends for 2023",
       "content": "Stay up-to-date with the latest web design trends, including color schemes, typography, and layouts. In this comprehensive overview, we analyze the design landscape for 2023, highlighting emerging trends and providing inspiration for designers and developers alike. Elevate your web design game and create visually stunning websites that captivate your audience.",
@@ -121,6 +133,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?python",
       "title": "Python: A Versatile Language for All",
       "content": "Discover the versatility of Python, from web development to data science and automation. This guide explores Python's wide range of applications and provides insights into how to leverage its power for various projects. Whether you're a beginner or an experienced developer, Python has something to offer for everyone.",
@@ -131,6 +144,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?react",
       "title": "React.js: Building Interactive User Interfaces",
       "content": "Learn how to build interactive and dynamic user interfaces using React.js. This guide covers the fundamentals of React, including components, state management, and routing. Whether you're new to React or looking to enhance your skills, this resource will help you create engaging web applications.",
@@ -141,6 +155,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?vuejs",
       "title": "Vue.js: The Progressive JavaScript Framework",
       "content": "Explore Vue.js, the progressive JavaScript framework that makes building web applications a breeze. This comprehensive guide covers Vue.js fundamentals, including components, directives, and state management. Whether you're a novice or an experienced developer, Vue.js offers a refreshing approach to frontend development.",
@@ -151,6 +166,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?docker",
       "title": "Docker: Containerization Made Easy",
       "content": "Learn how to containerize your applications with Docker and streamline the deployment process. This guide covers Docker basics, container orchestration, and best practices for managing containers in production. Whether you're a developer or an operations professional, Docker can simplify your workflow and enhance application scalability.",
@@ -161,6 +177,7 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?cloudcomputing",
       "title": "Demystifying Cloud Computing",
       "content": "Explore the world of cloud computing, from infrastructure as a service (IaaS) to serverless architectures. This comprehensive guide provides insights into major cloud providers, cloud security, and best practices for designing scalable and resilient cloud-based applications. Whether you're new to the cloud or a cloud expert, this resource will help you harness the power of cloud computing.",
