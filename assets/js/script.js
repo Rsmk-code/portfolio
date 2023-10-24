@@ -170,22 +170,22 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error fetching data:", error);
       });
   }
-  const limit = 16;
+  const limit = 6;
   function displayLimitedBlogPosts(posts) {
     const blogContainer = document.querySelector(".card-wrapper");
     blogContainer.innerHTML = ''; // Clear existing posts
 
     posts.forEach((post) => {
-      const first120Chars = post.content.substring(0, 100);
+      const first120Chars = post.content.substring(0, 150);
 
     const postHTML = `
         <div class="card swiper-slide">
             <div class="card__header">
-                <img src="${post.imageSrc}" alt="card__image" class="card__image" width="600">
+            <a href="${post.link}"><img src="${post.imageSrc}" alt="card__image" class="card__image" width="600"></a>
             </div>
             <div class="card__body">
                 <a href="${post.link}"><h4>${post.title}</h4></a>
-                <p>${first120Chars}...</p>
+                <a href="${post.link}"><p>${first120Chars}...</p></a>
             </div>
             <div class="card__footer">
                 <div class="user">

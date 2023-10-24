@@ -12,6 +12,28 @@
       }
     },
     {
+      "link":"https://blog.ramin.website/web-design-trends-for-2023",
+      "imageSrc": "https://source.unsplash.com/600x400/?webdesign",
+      "title": "Web Design Trends for 2023",
+      "content": "Welcome to the future of web design! As we gear up for 2023, it's essential to stay ahead of the curve and embrace the latest trends in the digital world.",
+      "author": {
+        "name": "Ramin SMK",
+        "timestamp": "Oct 24, 2023",
+        "avatarSrc": "https://cdn.hashnode.com/res/hashnode/image/upload/v1698076763973/F9tcneKkv.png?w=500&h=500&fit=crop&crop=faces&auto=compress,format&format=webp"
+      }
+    },
+    {
+      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
+      "imageSrc": "https://source.unsplash.com/600x400/?webdev",
+      "title": "Web Development Fundamentals for Beginners",
+      "content": "Get started with web development basics, including HTML, CSS, and creating your first website. This beginner-friendly guide covers the essential building blocks of web development, making it perfect for those taking their first steps in the field. Learn the foundations and kickstart your journey to becoming a proficient web developer.",
+      "author": {
+        "name": "Ramin SMK",
+        "timestamp": "Oct 23, 2023",
+        "avatarSrc": "https://cdn.hashnode.com/res/hashnode/image/upload/v1698076763973/F9tcneKkv.png?w=500&h=500&fit=crop&crop=faces&auto=compress,format&format=webp"
+      }
+    },
+    {
       "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?javascript",
       "title": "Exploring Modern JavaScript Features",
@@ -101,17 +123,6 @@
     },
     {
       "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
-      "imageSrc": "https://source.unsplash.com/600x400/?webdev",
-      "title": "Web Development Fundamentals for Beginners",
-      "content": "Get started with web development basics, including HTML, CSS, and creating your first website. This beginner-friendly guide covers the essential building blocks of web development, making it perfect for those taking their first steps in the field. Learn the foundations and kickstart your journey to becoming a proficient web developer.",
-      "author": {
-        "name": "WebDev Rookie",
-        "timestamp": "1 week ago",
-        "avatarSrc": "https://i.pravatar.cc/40?img=7"
-      }
-    },
-    {
-      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
       "imageSrc": "https://source.unsplash.com/600x400/?frontend",
       "title": "Frontend Development: Building User-Friendly Interfaces",
       "content": "Learn the art of frontend development, including responsive design and interactive web interfaces. This hands-on guide explores frontend frameworks, CSS preprocessors, and best practices for creating user-friendly websites and applications. Whether you're a seasoned frontend developer or aspiring to be one, this guide will help you craft stunning and intuitive user interfaces.",
@@ -119,17 +130,6 @@
         "name": "Frontend Pro",
         "timestamp": "4 days ago",
         "avatarSrc": "https://i.pravatar.cc/40?img=8"
-      }
-    },
-    {
-      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
-      "imageSrc": "https://source.unsplash.com/600x400/?webdesign",
-      "title": "Web Design Trends for 2023",
-      "content": "Stay up-to-date with the latest web design trends, including color schemes, typography, and layouts. In this comprehensive overview, we analyze the design landscape for 2023, highlighting emerging trends and providing inspiration for designers and developers alike. Elevate your web design game and create visually stunning websites that captivate your audience.",
-      "author": {
-        "name": "Design Enthusiast",
-        "timestamp": "1 month ago",
-        "avatarSrc": "https://i.pravatar.cc/40?img=9"
       }
     },
     {
