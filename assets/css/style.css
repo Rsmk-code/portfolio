@@ -1073,6 +1073,7 @@ header .navbar ul li a:hover {
 .blog .card .card__footer .user {
   display: flex;
   gap: .60rem;
+  margin-bottom: 0.5rem;
 }
 .blog .card .card__footer .user .user__image {
   border-radius: 50%;
