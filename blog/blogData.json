@@ -45,14 +45,14 @@
       }
     },
     {
-      "link":"https://blog.ramin.website/web-development-fundamentals-for-beginners",
+      "link":"https://blog.ramin.website/web-development-backend",
       "imageSrc": "https://source.unsplash.com/600x400/?backend",
-      "title": "Demystifying Web Development Backend",
-      "content": "Dive into the world of web development backend technologies, including databases, APIs, and server management. This comprehensive guide will help you understand the core components of backend development and provide practical tips for building robust, secure, and scalable web applications. Whether you're a backend novice or expert, there's something here for everyone.",
+      "title": "Web Development Backend",
+      "content": "When it comes to web development, a strong backend is essential for ensuring the smooth functioning of your website. While the frontend is responsible for the visual appeal and user interaction, the backend is the backbone that supports it all.",
       "author": {
-        "name": "Backend Ninja",
-        "timestamp": "2d ago",
-        "avatarSrc": "https://i.pravatar.cc/40?img=6"
+        "name": "Ramin SMK",
+        "timestamp": "Oct 25, 2023",
+        "avatarSrc": "https://cdn.hashnode.com/res/hashnode/image/upload/v1698076763973/F9tcneKkv.png?w=500&h=500&fit=crop&crop=faces&auto=compress,format&format=webp"
       }
     },
     {
