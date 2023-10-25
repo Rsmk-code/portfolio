@@ -1028,7 +1028,7 @@ header .navbar ul li a:hover {
   display: flex;
   flex-direction: column;
   width: clamp(30rem, calc(30rem + 3vw), 33rem);
-  height: 50rem;
+  height: auto;
   overflow: hidden; 
   border-radius: 1rem;
   background: #ECE9E6;
