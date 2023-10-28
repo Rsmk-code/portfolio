@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
     blogContainer.innerHTML = ''; // Clear existing posts
 
     posts.forEach((post) => {
-      const first120Chars = post.content.substring(0, 120);
+      const first120Chars = post.content.substring(0, 150);
 
     const postHTML = `
         <div class="card swiper-slide">
