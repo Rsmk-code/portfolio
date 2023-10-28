@@ -1019,10 +1019,15 @@ header .navbar ul li a:hover {
   width: 90vw;
   overflow: hidden;
 }
+.blog .card .card__header {
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+}
 .blog .card .card__header img {
   max-width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 1rem;
 }
 .blog .card {
   display: flex;
