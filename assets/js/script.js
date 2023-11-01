@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="card__footer">
                 <div class="user">
-                    <img src="${post.author.avatarSrc}" alt="user__image" class="user__image">
+                    <img src="${post.author.avatarSrc}" alt="Ahmad Ramin Soleyman Kheyl" class="user__image">
                     <div class="user__info">
                         <h5>${post.author.name}</h5>
                         <small>${post.author.timestamp}</small>
