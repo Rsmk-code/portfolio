@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img src="${post.author.avatarSrc}" alt="Ahmad Ramin Soleyman Kheyl" class="user__image">
                     <div class="user__info">
                         <h5>${post.author.name}</h5>
-                        <!-- <small>${post.author.timestamp}</small> -->
+                        <small>${post.author.timestamp}</small>
                     </div>
                 </div>
             </div>
