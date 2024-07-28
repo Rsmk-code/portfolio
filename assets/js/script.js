@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const postHTML = `
         <div class="card swiper-slide">
             <div class="card__header">
-            <a href="${post.link}"><img src="${post.imageSrc}" alt="card__image" class="card__image" width="600"></a>
+            <a href="${post.link}"><img src="${post.imageSrc}" alt="card__image" class="card__image"></a>
             </div>
             <div class="card__body">
                 <a href="${post.link}"><h4>${post.title}</h4></a>
