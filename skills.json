@@ -48,6 +48,10 @@
         "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
     },
     {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/firebase.png"
+    },
+    {
         "name": "DigitalOcean",
         "icon": "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png"
     },
